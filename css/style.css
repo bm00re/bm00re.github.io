@@ -1,0 +1,289 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+body {
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+}
+
+h2.love-story, h3.love-story, h4.love-story, h5.love-story {
+  font-family: 'Zilla Slab', serif;
+}
+
+a.navbar-brand,
+a#logo {
+  font-family: 'Sacramento', cursive;
+  font-size: 3em;
+  color: rgba(0, 0, 0, 0.6)
+}
+
+/*
+.navbar, .navbar-light, .bg-light {
+  background-color: transparent !important;
+}
+*/
+
+nav.navbar.fixed-top {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.nav-item {
+  text-transform: uppercase;
+}
+
+.main-header-2 {
+  background: rgba(0, 0, 0, 0.3),
+               url('../img/img_bg_0.jpg') no-repeat top;
+  background-size: cover;
+  vertical-align: bottom;
+  align-content: flex-start;
+}
+
+.sub-header {
+  background: linear-gradient(
+              rgba(255,255,255, .65),
+              rgba(255,255,255, .65)),
+              url('../img/img_bg_1.jpg') no-repeat center;
+  background-size: cover;
+  vertical-align: bottom;
+  align-content: flex-start;
+  height: 560px;
+}
+.rounded-circle {
+  box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
+}
+
+.couple-photo {
+  height: 150px;
+  width: 150px;
+}
+
+.couple-name {
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.groom {
+  align-items: right;
+  margin: 0 -10px 0 20px;
+}
+
+.bride {
+  align-items: left;
+  margin: 0 20px 0 -10px;
+}
+
+.heart {
+  margin: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  animation: pulse 1s ease infinite;
+  box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
+}
+
+.heart i {
+  font-size: 20px;
+  background: #fff;
+  padding: 20px;
+  margin: 0 -20px;
+  color: #F4BBCF;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .heart {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .couple-split {
+    width: 100%;
+    height: 140px;
+  }
+  .couple-split img.couple-photo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+}
+
+#event-btn {
+  background: black;
+  color: white;
+  border-radius: 0;
+}
+
+#card {
+  border-radius: 0;
+  box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
+  width: 60%;
+}
+@media screen and (max-width: 480px) {
+  #card {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 320px) {
+  #card {
+    width: 90%;
+  }
+}
+
+#barn-outside, #sri, #matt,
+#mccay, #mete, #susie, #juno,
+#abby, .card {
+  border: none;
+}
+
+#sri, #matt,
+#mccay, #mete, #susie, #juno,
+#abby {
+  border-radius: 50%;
+}
+
+.icon-calendar:before {
+  content: "\e979";
+  font-size: 1.5em;
+}
+.icon-location-pin:before {
+  content: "\e9d1";
+  font-size: 1.8em;
+  align-items: flex-start;
+}
+.icon-clock:before {
+  content: "\e014";
+  font-size: 1.4em;
+}
+
+.card-body p, .card-body strong {
+  font-size: .9em;
+  margin: 0;
+  padding: 0 5px;
+}
+
+.no-bullet {
+  list-style-type: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  font-size: 55px;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
+
+.row > strong, .row > p {
+  padding-left: 0;
+}
+
+/*
+#groomsmen, #bridesmaids {
+  border: solid black;
+  border-width: 10px;
+}
+*/
+
+.meet-wedding-party h5 {
+  padding: 0 20px;
+}
+.meet-wedding-party img {
+  height: 150px;
+  width: 150px;
+}
+
+.card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card-img-overlay:hover {
+  background-color: none;
+}
+
+.section-gray {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.nav-fix {
+  margin-top: 107px;
+}
+
+@media screen and (max-width: 720px) {
+  .meet-wedding-party img {
+    height: 100px;
+    width: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .meet-wedding-party img {
+    height: 80px;
+    width: 80px;
+  }
+  .card-body > h3 {
+    font-size: 1.25em;
+  }
+  h3.timeline-title {
+    font-size: 1.17em;
+    margin-bottom: 8px;
+  }
+  span.date {
+    font-size: 11px;
+    margin-bottom: 4px;
+  }
+  div.timeline-body p {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  
+}
+@media screen and (max-width: 348px) {
+  .nav-fix {
+    margin-top: 147px;
+    height: 800px;
+  }
+}
