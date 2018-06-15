@@ -5,22 +5,28 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Ben &amp; Trang Wedding</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- GOOGLE FONTS WEB API-->
   <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700|Sacramento|Fredericka+the+Great|Zilla+Slab:300i' rel='stylesheet' type='text/css'>
+
   <!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
+  <!-- Font Awesome Icon Fonts-->
+	<link rel="stylesheet" href="fa/css/fontawesome-all.min.css">
 	<!-- Bootstrap  -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <!-- Theme style  -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <!-- FH5CO style  -->
+  <link rel="stylesheet" href="css/FH5CO.css">
 </head>
 
 <body>
 
-  <header class="main-header-2">
+  <header>
     <!--  NAVIGATION  -->
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+      <div class="container">
         <a class="navbar-brand" id="logo" href="#">Ben &amp; Trang</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -33,69 +39,108 @@
             <a class="nav-item nav-link" href="gallery.html">Gallery</a>
             <a class="nav-item nav-link" href="registry.html">Registry</a>
           </div>
-        </div>
-      </nav>
-    </div><!--  /NAVIGATION  -->
-    <!--  COUPLE -->
-    <div class="container text-center mt-5 mb-3">
-      <div class="row align-items-center justify-content-center py-5">
-        <div class="couple-half d-flex align-items-center">
-          <h1 class="couple-name">
-            Ben Moore
-          </h1>
-          <img src="img/groom.jpg" alt="groom" class="couple-photo groom">
-        </div>
-          <p class="heart">
-            <i class="icon-heart2"></i>
-          </p>
-        <div class="couple-half d-flex align-items-center">
-          <img src="img/bride.jpg" alt="bride" class="couple-photo bride">
-          <h1 class="couple-name">
-            Trang Pham
-          </h1>
-        </div>
+        </div>    
       </div>
-      <div class="row align-items-center justify-content-center">
-        <h2 class="mx-auto d-block love-story">
-          In celebration of our love story...
-        </h2>
-      </div>
-      <div class="row align-items-center justify-content-center">
-        <h5 class="mx-auto d-block love-story pb-2">
-          We invite you to join us on our special day...
-        </h5>
-      </div>
-    </div><!-- /COUPLE -->
+    </nav><!--  /NAVIGATION  -->
   </header>
 
-  <!--                                                            -->
-  <!--  UPDATE TO TABLE OR GRID TO MAKE THE TEXT BETTER ALIGN...  -->
-  <!--                                                            -->
-  <!--  EVENT INFO -->
-  <div class="container d-flex justify-content-center py-5">
-    <div id="card" class="card text-center">
-      <img class="card-img-top img-fluid" id="barn-outside" src="img/barn-outside.jpg" alt="The White Sparrow, view from outside">
-      <div class="card-body d-flex align-items-center pb-0">
-        <i class="icon-location-pin pr-2"></i>
-        <strong class="text-left">The White Sparrow Barn</strong>
-        <p class="text-left">7950 Co Rd 2412, Quinlan, TX 75474</p>
-      </div>
-      <div class="card-body d-flex align-items-center pb-0">
-        <i class="icon-clock pr-2"></i>
-        <strong class="text-left">October 7th, 2018</strong>
-        <p class="text-left">5:30pm - 10:00pm</p>
-      </div>
-      <div class="card-body d-flex">
-        <a href="event.html" id="event-btn" class="btn">Click for event details</a>
-      </div>
+    <!--  COUPLE -->
+  <section class="nav-fix">
+    <div class="sub-header">
+      <div class="container text-center pt-5 mt-5 align-self-center">
+        <div class="row align-items-center justify-content-center py-5">
+          <div class="couple-split d-flex align-items-center">
+            <h1 class="couple-name text-right d-flex justify-content-end">
+              Ben Moore
+            </h1>
+            <img src="img/groom.jpg" alt="groom" class="rounded-circle couple-photo groom">
+          </div>
+            <p class="heart">
+              <i class="icon-heart2"></i>
+            </p>
+          <div class="couple-split d-flex align-items-center">
+            <img src="img/bride.jpg" alt="bride" class="rounded-circle couple-photo bride">
+            <h1 class="couple-name">
+              Trang Pham
+            </h1>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+          <h2 class="mx-auto d-block love-story">
+            In celebration of our love story...
+          </h2>
+        </div>
+        <div class="row align-items-center justify-content-center">
+          <h5 class="mx-auto d-block love-story pb-2">
+            We invite you to join us on our special day...
+          </h5>
+        </div>
+      </div><!-- /COUPLE -->
     </div>
-  </div><!--  /EVENT INFO -->
+
+    <div class="container py-5">
+      <!--  EVENT INFO -->
+      <a href="event.html">
+        <div id="card" class="card mx-auto my-5">
+          <img class="card-img-top" id="barn-outside" src="img/barn-outside.jpg" alt="The White Sparrow, view from outside">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <i class="fas fa-location-arrow fa-fw"></i>
+              <strong class="pl-2 lead">The White Sparrow Barn</strong>
+            </li>
+            <li class="list-group-item">
+              <i class="fas fa-calendar fa-fw"></i>
+              <strong class="pl-2 lead">October 7th, 2018</strong>
+            </li>
+
+          </ul>
+        </div>
+      </a><!--  /EVENT INFO -->
+    </div>
+  </section>
+
+
+<div class="section-gray py-5">
+
+    <div class="container">
+
+      <div class="d-flex justify-content-center">
+        <h2>Our Wedding Crew</h2>
+      </div>
+
+      <div class="container my-5">
+        <div class="row d-flex flex-wrap meet-wedding-party justify-content-center">
+            <img class="rounded-circle p-2 flex-wrap" src="img/sri.jpg" alt="Sri Santhanam">
+            <img class="rounded-circle p-2 flex-wrap" src="img/mete.jpg" alt="Gonenc Mete">
+            <img class="rounded-circle p-2 flex-wrap" src="img/mccay.jpg" alt="McCay Douglas-Barnes">
+            <img class="rounded-circle p-2 flex-wrap" src="img/matt.jpg" alt="Matthew Moore">
+        </div>
+        <div class="row d-flex flex-wrap meet-wedding-party justify-content-center">
+            <img class="rounded-circle p-2" src="img/abby.jpg" alt="Abby Craig">
+            <img class="rounded-circle p-2" src="img/juno.jpg" alt="Juno Le">
+            <img class="rounded-circle p-2" src="img/susie.jpg" alt="Suselmis Hernandez-Pereira">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
 
 
   <footer>
-    <!-- FOOTER -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light d-flex flex-wrap justify-content-center">
+      <div class="navbar-nav text-center">
+        <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="story.html">Story</a>
+        <a class="nav-item nav-link" href="event.html">Event</a>
+        <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-item nav-link" href="registry.html">Registry</a>  
+      </div>
+    </nav>
   </footer>
-
 
 </body>
 </html>

@@ -105,9 +105,9 @@ nav.navbar.fixed-top {
   right: 0;
   z-index: 99;
   animation: pulse 1s ease infinite;
-  box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
+  text-shadow: 0px 14px 30px rgba(0, 0, 0, 0.75);
 }
-
+/*
 .heart i {
   font-size: 20px;
   background: #fff;
@@ -118,6 +118,13 @@ nav.navbar.fixed-top {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+  box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
+}
+*/
+.heart i {
+  font-size: 80px;
+  margin: 0 -35px;
+  color: #F4BBCF;
 }
 
 @media screen and (max-width: 768px) {
