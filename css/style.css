@@ -29,6 +29,10 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+#barn-outside {
+  border: none;
+}
+
 body {
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
 }
@@ -105,14 +109,13 @@ nav.navbar.fixed-top {
   right: 0;
   z-index: 99;
   animation: pulse 1s ease infinite;
-  text-shadow: 0px 14px 30px rgba(0, 0, 0, 0.75);
 }
-/*
+
 .heart i {
-  font-size: 20px;
+  font-size: 32px;
   background: #fff;
   padding: 20px;
-  margin: 0 -20px;
+  margin: 0 -27px;
   color: #F4BBCF;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -120,16 +123,26 @@ nav.navbar.fixed-top {
   border-radius: 50%;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
 }
-*/
+/*
 .heart i {
   font-size: 80px;
   margin: 0 -35px;
   color: #F4BBCF;
 }
-
+*/
 @media screen and (max-width: 991px) {
   .heart {
     display: none;
+  }
+  .sub-header {
+    height: 520px;
+  }
+  .sub-header h2, .sub-header h5 {
+    text-shadow:  0 0 10px white,
+                  0 5px 10px white,
+                  5px 0 10px white,
+                  0 -5px 10px white,
+                  -5px 0 10px white;
   }
 }
 
@@ -145,16 +158,20 @@ nav.navbar.fixed-top {
   }
 }
 
-#event-btn {
-  background: black;
-  color: white;
-  border-radius: 0;
+@media screen and (max-width: 410px) {
+  .card ul.list-group li.list-group-item strong.lead {
+    font-size: 1rem;
+  }
+  .container ul.list-group li.list-group-item strong.lead {
+    font-size: 1rem;
+  }
 }
 
 #card {
   border-radius: 0;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
   width: 60%;
+  border: none;
 }
 @media screen and (max-width: 480px) {
   #card {
@@ -167,32 +184,6 @@ nav.navbar.fixed-top {
   }
 }
 
-#barn-outside, #sri, #matt,
-#mccay, #mete, #susie, #juno,
-#abby, .card {
-  border: none;
-}
-
-#sri, #matt,
-#mccay, #mete, #susie, #juno,
-#abby {
-  border-radius: 50%;
-}
-
-.icon-calendar:before {
-  content: "\e979";
-  font-size: 1.5em;
-}
-.icon-location-pin:before {
-  content: "\e9d1";
-  font-size: 1.8em;
-  align-items: flex-start;
-}
-.icon-clock:before {
-  content: "\e014";
-  font-size: 1.4em;
-}
-
 .card-body p, .card-body strong {
   font-size: .9em;
   margin: 0;
@@ -203,53 +194,17 @@ nav.navbar.fixed-top {
   list-style-type: none;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background-image: none;
-}
-
-.carousel-control-next-icon:after
-{
-  font-size: 55px;
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: red;
-}
-
 .row > strong, .row > p {
   padding-left: 0;
 }
 
-/*
-#groomsmen, #bridesmaids {
-  border: solid black;
-  border-width: 10px;
-}
-*/
-
 .meet-wedding-party h5 {
   padding: 0 20px;
 }
+
 .meet-wedding-party img {
-  height: 150px;
-  width: 150px;
-}
-
-.card-img-overlay {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.card-img-overlay:hover {
-  background-color: none;
+  height: 200px;
+  width: 200px;
 }
 
 .section-gray {
@@ -260,16 +215,23 @@ nav.navbar.fixed-top {
   margin-top: 98px;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 991px) {
   .meet-wedding-party img {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
   }
+  .card a.btn.btn-primary {
+    font-size: 14px;
+    padding: 4px 10px;
+  }
+}
+@media screen and (max-width: 720px) {
+
 }
 @media screen and (max-width: 480px) {
   .meet-wedding-party img {
-    height: 80px;
-    width: 80px;
+    height: 120px;
+    width: 120px;
   }
   .card-body > h3 {
     font-size: 1.25em;
@@ -290,7 +252,9 @@ nav.navbar.fixed-top {
 }
 @media screen and (max-width: 348px) {
   .nav-fix {
-    margin-top: 147px;
+    margin-top: 138px;
+  }
+  .index-splash {
     height: 800px;
   }
 }

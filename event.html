@@ -17,6 +17,139 @@
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <!-- FH5CO style  -->
   <link rel="stylesheet" href="css/FH5CO.css">
+  <!--  GOOGLE MAPS SETTINGS  -->
+  <script>
+      
+    function initMap() {
+      // Styles a map in night mode.
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+          lat: 32.8586054,
+          lng: -96.4548025
+        },
+        zoom: 9,
+        styles: [{
+            featureType: "administrative.land_parcel",
+            elementType: "all",
+            stylers: [{
+              visibility: "off"
+            }]
+          },
+          {
+            featureType: "landscape.man_made",
+            elementType: "all",
+            stylers: [{
+              visibility: "off"
+            }]
+          },
+          {
+            featureType: "poi",
+            elementType: "labels",
+            stylers: [{
+              visibility: "off"
+            }]
+          },
+          {
+            featureType: "road",
+            elementType: "labels",
+            stylers: [{
+              visibility: "simplified"
+            }, {
+              lightness: 20
+            }]
+          },
+          {
+            featureType: "road.highway",
+            elementType: "geometry",
+            stylers: [{
+              hue: "#F4BBCF"
+            }]
+          },
+          {
+            featureType: "road.highway",
+            elementType: "geometry",
+            stylers: [{
+              saturation: "-50"
+            }]
+          },
+          {
+            featureType: "road.highway",
+            elementType: "geometry",
+            stylers: [{
+              lightness: "40"
+            }]
+          },
+          {
+            featureType: "road.highway",
+            elementType: "labels",
+            stylers: [{
+              visibility: "simplified"
+            }]
+          },
+          {
+            featureType: "road.arterial",
+            elementType: "geometry",
+            stylers: [{
+              hue: "#F4BBCF"
+            }]
+          },
+          {
+            featureType: "road.arterial",
+            elementType: "labels",
+            stylers: [{
+              visibility: "off"
+            }]
+          },
+          {
+            featureType: "road.local",
+            elementType: "geometry",
+            stylers: [{
+              visibility: "simplified"
+            }]
+          },
+          {
+            featureType: "road.local",
+            elementType: "labels",
+            stylers: [{
+              visibility: "simplified"
+            }]
+          },
+          {
+            featureType: "transit",
+            elementType: "all",
+            stylers: [{
+              visibility: "off"
+            }]
+          },
+          {
+            featureType: "water",
+            elementType: "all",
+            stylers: [{
+              hue: "#a1cdfc"
+            }, {
+              saturation: 30
+            }, {
+              lightness: 49
+            }]
+          }
+        ]
+      });
+
+      var whiteSparrow = {
+        lat: 32.908772,
+        lng: -96.2317715
+      }
+
+      var marker = new google.maps.Marker({
+        position: whiteSparrow,
+        map: map,
+        title: "The White Sparrow Barn"
+      });
+    }
+  </script>
+  <!-- LOAD GOOGLE MAPS JAVASCRIPT API -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&callback=initMap">
+  </script>
 </head>
 
 <body>
@@ -44,32 +177,156 @@
 
   </header>
 
-  <!--  EMBEDDED GOOGLE MAP
-  <iframe src="https://snazzymaps.com/embed/78559" width="100%" height="600px" style="border:none;"></iframe>
-  -->
 
-
-
+  <!--  GOOGLE MAP  -->
 	<div id="page" class="nav-fix">
-
 	  <div id="map" class="fh5co-map"></div>
-
-  </div>
-
-    <footer>
+  </div><!--  /GOOGLE MAP  -->
 
 
-      <nav class="navbar navbar-expand-sm navbar-light bg-light d-flex flex-wrap justify-content-center">
-        <div class="navbar-nav text-center">
-          <a class="nav-item nav-link" href="index.html">Home</a>
-          <a class="nav-item nav-link" href="story.html">Story</a>
-          <a class="nav-item nav-link active" href="event.html">Event <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="gallery.html">Gallery</a>
-          <a class="nav-item nav-link" href="registry.html">Registry</a>  
+
+
+
+  <!--  INFO  -->
+  <section class=" section-gray">
+    
+
+    <div class="container py-5">
+
+      <div class="row px-3">
+        <div class="col-sm-4 px-0">
+          <div class="card">
+            <img class="card-img-bottom" id="barn-outside" src="img/barn-outside.jpg" alt="The White Sparrow, view from outside">
+          </div>
         </div>
-      </nav>
+        <div class="col-sm-4 px-0">
+          <div class="card">
+            <img class="card-img-bottom" src="img/img_bg_1_lighter.jpg" alt="The White Sparrow, view from second floor">
+          </div>
+        </div>
+        <div class="col-sm-4 px-0">
+          <div class="card">
+            <img class="card-img-bottom" src="img/img_bg_3.jpg" alt="The White Sparrow, view from first floor">
+          </div>
+        </div>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item float-left float-md-left">
+          <i class="fas fa-location-arrow fa-fw fa-lg"></i>
+          <strong class="pl-3 lead">The White Sparrow Barn</strong>
+          <em class="px-5 d-block font-weight-light">7950 Co Rd 2412, Quinlan, TX 75474</em>
+        </li>
+        <li class="list-group-item float-right float-md-right">
+          <i class="fas fa-calendar fa-fw fa-lg"></i>
+          <strong class="pl-3 lead">October 7th, 2018</strong>
+          <em class="px-5 d-block font-weight-light">5:30 pm - reception to follow</em>
+        </li>
+      </ul>
+    </div>
+
+  </section><!--  /INFO  -->
+
+
+
+  <!--  WEDDING CREW  -->
+  <section class="container py-5">
   
-    </footer>
+    <div class="text-center fh5co-heading mx-auto my-1">
+      <span>The Team Behind the Team</span>
+      <h2>Our Wedding Crew</h2>
+    </div>
+
+    <div class="container">
+
+      
+      <div class="card-columns">
+  
+        <div class="card">
+          <img class="card-img-top" src="img/sri.jpg" alt="Sri Santhanam">
+          <div class="card-body">
+            <h5 class="card-title">Sri Santhanam</h5>
+            <h6 class="card-subtitle">Best Man</h6>
+            <p class="card-text text-left lead py-2">Sri graduated a year after me from the University of Illinois MBA program. While we worked in a student-run consulting firm together for a semester, our friendship blossomed once Sri relocated to Dallas after school to work for AT&amp;T.</p>
+            <p class="card-text text-left lead">Sri is the life of the party. His second home is It'll Do, a small EDM club in Deep Ellum. Never short on quirky intellectual conversation and thoughtful encouragement, Sri's a good dude.</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <img class="card-img-top" src="img/abby.jpg" alt="Abby Craig">
+          <div class="card-body">
+            <h5 class="card-title">Abby Craig</h5>
+            <h6 class="card-subtitle">Maid of Honor</h6>
+            <p class="card-text text-left lead py-2">Abby, soon to be Mrs. Cousert, is my sister from another mister -- the sushi to my pho. On a fateful day in the Midwest, we  met at a Latin dancing social. We hit it off with our  shared passion for rhythm. But our bond was forged through our shared values and small-town adventures. We even shared a roof for 3 years until I moved to Dallas. Before my eyes, I've seen Abby's work ethic lead her to recently becoming a leasing manager at one of the largest property management firms in Champaign-Urbana.</p>
+            <p class="card-text text-left lead">Oh, and did I mention that she has 21 siblings?</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" src="img/mete.jpg" alt="Gonenc Mete">
+          <div class="card-body">
+            <h5 class="card-title">Gonenc Mete</h5>
+            <h6 class="card-subtitle">Groomsman</h6>
+            <p class="card-text text-left lead py-2">Mete, as he goes, was one of my first friends at the University of Illinois MBA program. We spent many-a-night at his apartment, sipping fine whipped cream vodka, as we talked of what our future might be. Eventually, Mete had a hair-brained scheme and we worked (with McCay to boot) on a startup together tirelessly for the last semester of school.</p>
+            <p class="card-text text-left lead">Now, Mete is half-a-world-away in the Valley of Silicon chips and nerdy dreams. We've had yearly re-encounters but distance certainly makes the heart grow fonder. He's a big shot now, having the honor to work along brilliant minds at the ever-desirable Facebook, each day making the world a better digital place.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" src="img/susie.jpg" alt="Suselmis Hernandez-Pereira">
+          <div class="card-body">
+            <h5 class="card-title">Suselmis Hernandez-Pereira</h5>
+            <h6 class="card-subtitle">Bridesmaid</h6>
+            <p class="card-text text-left lead pt-2">Susie is my fellow comrade sister! Vietnam and Cuba share history, cultures, and you know, that whole Communist society thing. Susie is Ben's adopted sister, yet once I met her, she instantly became mine, too. Not just a pretty face, Susie is super sweet, thoughtful, and funny. She is an interior designer and aspires to perhaps one day be an architect.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" src="img/mccay.jpg" alt="McCay Douglas-Barnes">
+          <div class="card-body">
+            <h5 class="card-title">McCay Douglas-Barnes</h5>
+            <h6 class="card-subtitle">Groomsman</h6>
+            <p class="card-text text-left lead py-2">McCay -- what can one say about this mild-mannered, charming Midwesterner? If there isn't a pattern, I don't know what is. McCay also attended the University of Illinois MBA program. And he was that legendary other member of our Mete-McCay-Ben startup, AngelRaise LLC.</p>
+            <p class="card-text text-left lead">McCay married last year and remained in Chicago, despite his company pushing him to the East Coast. He's been at Baxter (now Shire) ever since he graduated, moving on to become an Associate Director of Health Mobile Applications.</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img class="card-img-top" src="img/juno.jpg" alt="Juno Le">
+          <div class="card-body">
+            <h5 class="card-title">Juno Le</h5>
+            <h6 class="card-subtitle">Bridesmaid</h6>
+            <p class="card-text text-left lead pt-2">Juno, my niece, though she will forever feel like my little sister. She is smart, witty, and full of energy, just the perfect type of partner in crime. Even though we are a decade apart, we grew up together in Vietnam. While Juno has the kind of smile to light up the room, she's an engineer by trade.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" src="img/matt.jpg" alt="Matthew Moore">
+          <div class="card-body">
+            <h5 class="card-title">Matthew Moore</h5>
+            <h6 class="card-subtitle">Groomsman</h6>
+            <p class="card-text text-left lead py-2">Beyond his exceedingly important role as brother to the groom, he's kicking keister and taking names for the gub'ment. Living in Aurora, Colorado, he was recently married to his better-half last summer in ever-sweltering-but-picturesque Florida. When he's not waking up at 3am as a Guardian of the Galaxy, Matt likes to take his speedy pointer Sadie to one-hop tennis balls launched half-a-park-away.</p>
+          </div>
+        </div>
+
+  
+      </div>
+    </div>
+  </section><!--  /WEDDING CREW  -->
+
+
+
+
+  <footer>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light d-flex flex-wrap justify-content-center">
+      <div class="navbar-nav text-center">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="story.html">Story</a>
+        <a class="nav-item nav-link active" href="event.html">Event <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-item nav-link" href="registry.html">Registry</a>  
+      </div>
+    </nav>
+  </footer>
 
 
     
@@ -77,9 +334,11 @@
     <script src="js/jquery.min.js"></script>
     <!-- jQuery Easing -->
     <script src="js/jquery.easing.1.3.js"></script>
-    <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA"></script>
-    <script src="js/google_map.js"></script>
+
+
+
+<!--    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA"></script>   -->
+
 
 
 </body>
