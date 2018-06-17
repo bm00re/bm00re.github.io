@@ -48,12 +48,6 @@ a#logo {
   color: rgba(0, 0, 0, 0.6)
 }
 
-/*
-.navbar, .navbar-light, .bg-light {
-  background-color: transparent !important;
-}
-*/
-
 nav.navbar.fixed-top {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
@@ -130,6 +124,14 @@ nav.navbar.fixed-top {
   color: #F4BBCF;
 }
 */
+
+small.text-muted {
+  line-height: 1;
+  background-color: rgba(255, 255, 255, .7);
+  padding: 6px 10px;
+  color: #F4BBCF!important;
+}
+
 @media screen and (max-width: 991px) {
   .heart {
     display: none;
@@ -215,6 +217,18 @@ nav.navbar.fixed-top {
   margin-top: 98px;
 }
 
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+div.fh5co-heading > h2.gray-text {
+  color: rgba(130, 130, 130, 1);
+}
+
 @media screen and (max-width: 991px) {
   .meet-wedding-party img {
     height: 150px;
@@ -248,7 +262,6 @@ nav.navbar.fixed-top {
     font-size: 12px;
     margin-bottom: 4px;
   }
-  
 }
 @media screen and (max-width: 348px) {
   .nav-fix {
@@ -256,5 +269,10 @@ nav.navbar.fixed-top {
   }
   .index-splash {
     height: 800px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #his-her-labels {
+    visibility: hidden;
   }
 }
