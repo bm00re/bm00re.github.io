@@ -44,7 +44,7 @@ h2.love-story, h3.love-story, h4.love-story, h5.love-story {
 a.navbar-brand,
 a#logo {
   font-family: 'Sacramento', cursive;
-  font-size: 3em;
+  font-size: 2.5em;
   color: rgba(0, 0, 0, 0.6)
 }
 
@@ -54,6 +54,12 @@ nav.navbar.fixed-top {
 
 .nav-item {
   text-transform: uppercase;
+}
+
+a.nav-item.nav-link.active {
+  border-bottom: 2px solid #F4BBCF;
+  padding: 2px 0;
+  margin: 6px 8px;
 }
 
 .main-header-2 {
@@ -85,6 +91,11 @@ nav.navbar.fixed-top {
 
 .couple-name {
   font-family: 'Fredericka the Great', cursive;
+  text-shadow:  0 0 10px white,
+                0 5px 10px white,
+                5px 0 10px white,
+                0 -5px 10px white,
+                -5px 0 10px white;
 }
 
 .groom {
@@ -214,7 +225,7 @@ small.text-muted {
 }
 
 .nav-fix {
-  margin-top: 98px;
+  margin-top: 86px;
 }
 
 .box-shadow {
