@@ -80,6 +80,16 @@ a.nav-item.nav-link.active {
   align-content: flex-start;
   height: 560px;
 }
+.sub-header-1 {
+  background-image: url('../img/NMP-64.jpg');
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 50%;
+  background-size: cover;
+  position: relative;
+}
+
 .rounded-circle {
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
 }
@@ -88,9 +98,40 @@ a.nav-item.nav-link.active {
   border: none !important;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .couple-photo {
   height: 150px;
   width: 150px;
+}
+
+h3.getting-married, div.getting-married {
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.35rem;
+  color: rgb(100, 100, 100);
+}
+
+.overlay {
+  mix-blend-mode: overlay;
+  color: black;
+}
+
+.white-outer-border {
+  background: white;
+  border-color: white;
+  border-width: 10px;
+  padding: 30px;
+}
+
+.inset-border {
+  border-color: rgba(128, 128, 128, 0.35);
+  border-style: solid none;
+  border-width: 1px;
+  background-color: white;
 }
 
 .couple-name {
@@ -132,13 +173,7 @@ a.nav-item.nav-link.active {
   border-radius: 50%;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
 }
-/*
-.heart i {
-  font-size: 80px;
-  margin: 0 -35px;
-  color: #F4BBCF;
-}
-*/
+
 
 small.text-muted {
   line-height: 1;
@@ -147,58 +182,11 @@ small.text-muted {
   color: #F4BBCF!important;
 }
 
-@media screen and (max-width: 991px) {
-  .heart {
-    display: none;
-  }
-  .sub-header {
-    height: 520px;
-  }
-  .sub-header h2, .sub-header h5 {
-    text-shadow:  0 0 10px white,
-                  0 5px 10px white,
-                  5px 0 10px white,
-                  0 -5px 10px white,
-                  -5px 0 10px white;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .couple-split {
-    width: 100%;
-    height: 140px;
-  }
-  .couple-split img.couple-photo {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 410px) {
-  .card ul.list-group li.list-group-item strong.lead {
-    font-size: 1rem;
-  }
-  .container ul.list-group li.list-group-item strong.lead {
-    font-size: 1rem;
-  }
-}
-
 #card {
   border-radius: 0;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
   width: 60%;
   border: none;
-}
-@media screen and (max-width: 480px) {
-  #card {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 320px) {
-  #card {
-    width: 90%;
-  }
 }
 
 .card-body p, .card-body strong {
@@ -244,6 +232,8 @@ div.fh5co-heading > h2.gray-text {
   color: rgba(130, 130, 130, 1);
 }
 
+
+
 @media screen and (max-width: 991px) {
   .meet-wedding-party img {
     height: 150px;
@@ -253,9 +243,44 @@ div.fh5co-heading > h2.gray-text {
     font-size: 14px;
     padding: 4px 10px;
   }
+  .sub-header-1 {
+    background-image: url('../img/NMP-64.jpg');
+    height: 650px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 50%;
+    background-size: cover;
+    position: relative;
+  }
+  .heart {
+    display: none;
+  }
+  .sub-header {
+    height: 520px;
+  }
+  .sub-header h2, .sub-header h5 {
+    text-shadow:  0 0 10px white,
+                  0 5px 10px white,
+                  5px 0 10px white,
+                  0 -5px 10px white,
+                  -5px 0 10px white;
+  }
+}
+@media screen and (max-width: 767px) {
+  #his-her-labels {
+    visibility: hidden;
+  }
 }
 @media screen and (max-width: 720px) {
-
+  .sub-header-1 {
+    background-image: url('../img/NMP-64.jpg');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 50%;
+    background-size: cover;
+    position: relative;
+  }
 }
 @media screen and (max-width: 480px) {
   .meet-wedding-party img {
@@ -277,6 +302,35 @@ div.fh5co-heading > h2.gray-text {
     font-size: 12px;
     margin-bottom: 4px;
   }
+  .sub-header-1 {
+    background-image: url('../img/NMP-64.jpg');
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 50%;
+    background-size: cover;
+    position: relative;
+  }
+  #card {
+    width: 80%;
+  }
+  .couple-split {
+    width: 100%;
+    height: 140px;
+  }
+  .couple-split img.couple-photo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 410px) {
+  .card ul.list-group li.list-group-item strong.lead {
+    font-size: 1rem;
+  }
+  .container ul.list-group li.list-group-item strong.lead {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 348px) {
   .nav-fix {
@@ -285,9 +339,19 @@ div.fh5co-heading > h2.gray-text {
   .index-splash {
     height: 800px;
   }
+  .sub-header-1 {
+    background-image: url('../img/NMP-64.jpg');
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 50%;
+    background-size: cover;
+    position: relative;
+  }
 }
-@media screen and (max-width: 767px) {
-  #his-her-labels {
-    visibility: hidden;
+
+@media screen and (max-width: 320px) {
+  #card {
+    width: 90%;
   }
 }
