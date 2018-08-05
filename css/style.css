@@ -38,8 +38,6 @@ body {
 }
 
 h2.love-story, h3.love-story, h4.love-story, h5.love-story {
-/*   font-family: 'Zilla Slab', serif; 
-  font-family: 'Shadows Into Light', cursive; */
   font-family: 'Indie Flower', cursive;
 }
 
@@ -139,7 +137,6 @@ h3.getting-married, div.getting-married {
 }
 
 .couple-name {
-/*  font-family: 'Fredericka the Great', cursive; */
   font-family: 'Amatic SC', cursive;
   color: #4C4C4C;
   text-shadow:  0 0 10px white,
