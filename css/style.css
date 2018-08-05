@@ -38,7 +38,9 @@ body {
 }
 
 h2.love-story, h3.love-story, h4.love-story, h5.love-story {
-  font-family: 'Zilla Slab', serif;
+/*   font-family: 'Zilla Slab', serif; 
+  font-family: 'Shadows Into Light', cursive; */
+  font-family: 'Indie Flower', cursive;
 }
 
 a.navbar-brand,
@@ -74,11 +76,13 @@ a.nav-item.nav-link.active {
   background: linear-gradient(
               rgba(255,255,255, .65),
               rgba(255,255,255, .65)),
-              url('../img/img_bg_1.jpg') no-repeat center;
+              url('../img/img_bg_1.jpg') no-repeat;
+  background-position-y: 20%;
+  background-position-x: 44%;
   background-size: cover;
   vertical-align: bottom;
   align-content: flex-start;
-  height: 560px;
+  height: 400px;
 }
 .sub-header-1 {
   background-image: url('../img/NMP-64.jpg');
@@ -135,7 +139,9 @@ h3.getting-married, div.getting-married {
 }
 
 .couple-name {
-  font-family: 'Fredericka the Great', cursive;
+/*  font-family: 'Fredericka the Great', cursive; */
+  font-family: 'Amatic SC', cursive;
+  color: #4C4C4C;
   text-shadow:  0 0 10px white,
                 0 5px 10px white,
                 5px 0 10px white,
@@ -252,12 +258,7 @@ div.fh5co-heading > h2.gray-text {
     background-size: cover;
     position: relative;
   }
-  .heart {
-    display: none;
-  }
-  .sub-header {
-    height: 520px;
-  }
+
   .sub-header h2, .sub-header h5 {
     text-shadow:  0 0 10px white,
                   0 5px 10px white,
@@ -266,11 +267,26 @@ div.fh5co-heading > h2.gray-text {
                   -5px 0 10px white;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   #his-her-labels {
     visibility: hidden;
+    display: none;
   }
+  .heart {
+    display: none;
+  }
+  .sub-header {
+    height: 450px;
+    background: linear-gradient(
+      rgba(255,255,255, .65),
+      rgba(255,255,255, .95)),
+      url('../img/img_bg_1.jpg') no-repeat;
+    background-position-y: 0%;
+    background-position-x: 50%;
+  }
+  
 }
+
 @media screen and (max-width: 720px) {
   .sub-header-1 {
     background-image: url('../img/NMP-64.jpg');
@@ -314,15 +330,7 @@ div.fh5co-heading > h2.gray-text {
   #card {
     width: 80%;
   }
-  .couple-split {
-    width: 100%;
-    height: 140px;
-  }
-  .couple-split img.couple-photo {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto;
-  }
+
 }
 @media screen and (max-width: 410px) {
   .card ul.list-group li.list-group-item strong.lead {
